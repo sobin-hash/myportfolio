@@ -21,3 +21,12 @@
     box-shadow: 2px solid blue;
     
 }
+
+.sobin {
+    /* font-family: "Nanum Gothic", sans-serif; */
+    font-family: "Roboto Mono", monospace;
+
+    font-weight: 400;
+    font-style: normal;
+  }
+  
