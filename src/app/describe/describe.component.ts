@@ -10,4 +10,6 @@ export class DescribeComponent {
   from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
   originally bred for hunting.`;
 
+  
+
 }

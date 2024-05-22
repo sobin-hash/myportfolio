@@ -1,21 +1,23 @@
-<header class="header" style="background-color: #0b1122;position: fixed; width: 100%;z-index: 1;">
+<header class="header" style="background-color: #0b1122;position: fixed; width: 100%;z-index: 100;">
     <nav class="navbar">
-        <a href="#" class="nav-logo"><i class="fa-brands fa-connectdevelop" style="color: #24cae0;font-size: 44px;padding-top: 7px;"></i></a>
+        <a href="#" class="nav-logo">
+            <i class="fa-brands fa-connectdevelop" style="color: #24cae0;font-size: 44px;padding-top: 7px;"></i>
+        </a>
         <ul class="nav-menu" [ngClass]="status ? 'hamburger' : 'active'">
             <li class="nav-item" (click)="closeEvent()">
-                <a href="#" class="nav-link"><span>01.</span>About</a>
+                <a href="#" class="nav-link"><span style="color: aqua;">01.</span>About</a>
             </li>
             <li class="nav-item" (click)="closeEvent()">
-                <a href="#" class="nav-link"><span>02.</span>Experience</a>
+                <a href="#" class="nav-link"><span style="color:aqua">02.</span>Experience</a>
             </li>
             <li class="nav-item" (click)="closeEvent()">
-                <a href="#" class="nav-link"><span>03.</span>Work</a>
+                <a href="#" class="nav-link"><span style=" color: aqua;">03.</span>Work</a>
             </li>
             <li class="nav-item" (click)="closeEvent()">
-                <a href="#" class="nav-link"><span>04.</span>Contact</a>
+                <a href="#" class="nav-link"><span style="color: aqua;">04.</span>Contact</a>
             </li>
-            <li class="btn p-1" style="border: 2px solid aqua;color: aqua;width: 140px;" (click)="closeEvent()">
-                <a href="#" class="nav-link" style="color: aqua;">Resume</a>
+            <li class="btn p-1 sm-mb-5" id="aron" (click)="downloadPdf()" style="border: 2px solid aqua;color: aqua;width: 140px;" (click)="closeEvent()">
+                <a class="nav-link " style="color: aqua;">Resume</a>
             </li>
         </ul>
         <div class="hamburger" [ngClass]="status ? 'hamburger' : 'active'" (click)="clickEvent()">

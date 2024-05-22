@@ -1,15 +1,23 @@
-.example-card {
-    max-width: 680px;
-    margin-left: 39px;
-    margin-top: 20px;
-    /* z-index: 1; */
-  }
 
+#describe{
+    cursor: alias;
+}
+@media only screen and (max-width:768px){
+    .expcontainer{
+        flex-direction: column;
+        /* justify-content: center; */
+        
 
-  @media screen and (max-width: 768px) {
-    .con{
-      flex-wrap: wrap;
     }
     
-  }
-  
+} 
+
+.expcontainer{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.example-card:hover{
+    box-shadow: 2px solid blue;
+    
+}

@@ -21,4 +21,11 @@ export class HeaderComponent {
     this.status = !this.status
   }
 
+  downloadPdf(){
+    let link = document.createElement('a')
+    link.download = "cvsb.pdf"
+    link.href = "assets/cvsb.pdf"
+    link.click();
+  }
+
 }
